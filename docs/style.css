@@ -1,0 +1,134 @@
+
+
+
+primary-color{
+--pale-blue:hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+}
+neutral-color{
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:  hsl(223, 47%, 23%);
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+body{
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 90vh;
+    
+}
+.card-container{
+    border-radius: 20px ;
+width: 320px;
+background: #ffffff;
+display: flex;
+flex-direction: column;
+}
+.card-container .card-image{
+    height: 156px;
+    background: url(./images/illustration-hero.svg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px 20px 0 0;
+}
+.card-container .card-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 30px 0 ;
+
+}
+.card-container .card-head h1{
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.card-container .card-head p{
+    color: rgba(0, 0, 0, 0.603);
+    line-height: 28px;
+    font-size: 16px;
+}
+.card-footer{
+    margin: 25px;
+}
+.card-program{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   height: 70px;
+   background-color: hsla(225, 100%, 94%, 0.377);
+   border-radius: 10px;
+
+}
+.card-program .card-program-icon {
+ 
+    display: flex;
+    align-items: center;
+    
+}
+.card-program .card-program-icon .icon-music{
+    padding: 5px 13px 0px;
+}
+.card-program .card-program-icon .card-program-price{
+    font-family: "Red hat Display";
+    line-height: 22px;
+}
+.card-program .card-program-icon .card-program-price h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+.card-program .card-program-icon .card-program-price p{
+    font-size: 16px;
+    
+}
+.card-program  .card-program-choice{
+   padding-right: 10px;
+   color: hsl(245, 75%, 52%);
+}
+.card-footer .card-payment{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-footer .card-payment button{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    background-color:  hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 8px;
+    width: 288px;
+    padding: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.281);
+}
+.card-footer .card-payment .card-program-order{
+   font-weight: 600;
+   color: rgb(124, 121, 121);
+}
+@media only screen and (min-width: 426px)  {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+}
